@@ -92,11 +92,9 @@ export default function App() {
     setResponseIsVisible(true);
 
     if (inputValue.toLowerCase() === flashcards[index].name) {
-      setResponse("Correct!");
-      setResponseColor("#1E8449");
+      setResponse(<span className="correct-text">Correct!</span>);
     } else {
-      setResponseColor("#922B21");
-      setResponse("Incorrect!");
+      setResponse(<span className="incorrect-text">Incorrect!</span>);
     }
   }
 
