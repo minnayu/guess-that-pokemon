@@ -5,15 +5,16 @@ Welcome to the guess-that-pokemon repository!
 ### https://endearing-fairy-e5f7e8.netlify.app/
 
 # Project Structure
-guess-that-pokemon/
-│
+#### guess-that-pokemon/
+```
+$PROJECT_ROOT
 ├── src/
 │   ├── App.js (Main page)
 │   ├── styles.css (for styling elements)
 │   ├── components/
 │       ├── Slideshow.js (Slideshow component)
 │       
-|   
+```
 
 # Installation
 #### To use this project locally, follow these steps:
