@@ -30,9 +30,9 @@ We welcome contributions from anyone, regardless of experience level! If you'd l
 ##### - Comment on the issue you would like to be assigned to.
 
 ##### 1. Fork the repository to your own account.
-##### 2. Create a new branch from the main branch: git checkout -b my-branch-name.
-##### 3. Make your changes and commit them: git commit -m "Add my awesome contribution".
-##### 4. Push your changes to your forked repository: git push origin my-branch-name.
+##### 2. Create a new branch from the main branch: `git checkout -b my-branch-name`.
+##### 3. Make your changes and commit them: `git commit -m "Add my awesome contribution"`.
+##### 4. Push your changes to your forked repository: `git push origin my-branch-name`.
 ##### 5. Create a Pull Request to merge your changes into the main branch.
 ##### Please make sure to follow the code style and formatting conventions already in place. Also, be sure to test your changes thoroughly before submitting a Pull Request.
 
