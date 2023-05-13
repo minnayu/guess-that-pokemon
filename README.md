@@ -36,6 +36,8 @@ We welcome contributions from anyone, regardless of experience level! If you'd l
 ##### 5. Create a Pull Request to merge your changes into the main branch.
 ##### Please make sure to follow the code style and formatting conventions already in place. Also, be sure to test your changes thoroughly before submitting a Pull Request.
 
+##### Once you have submitted your pull request, a moderator will review the changes and merge them in a timely manner. Keep an eye out for comments regarding your changes. Thank you!
+
 
 # React Coding Standards
 
