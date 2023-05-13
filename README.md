@@ -1,7 +1,24 @@
-## guess-that-pokemon
+# guess-that-pokemon
 Welcome to the guess-that-pokemon repository! 
 
-## Contributing
+# Installation
+#### To use this project locally, follow these steps:
+
+#### Fork and clone repository to your local files
+
+### Go to the project directory:
+##### cd guess-that-pokemon
+
+### Install dependencies:
+##### npm install
+
+### Start the development server:
+##### npm start
+
+### Open the app in your browser at:
+##### http://localhost:3000/
+
+# Contributing
 We welcome contributions from anyone, regardless of experience level! If you'd like to contribute, please follow these steps:
 
 ##### 1. Fork the repository to your own account.
@@ -11,7 +28,7 @@ We welcome contributions from anyone, regardless of experience level! If you'd l
 ##### 5. Create a Pull Request to merge your changes into the main branch.
 ##### Please make sure to follow the code style and formatting conventions already in place. Also, be sure to test your changes thoroughly before submitting a Pull Request.
 
-## Rules
+# Rules
 To ensure that this repository is a welcoming and inclusive space for everyone, we ask that all contributors abide by the following rules:
 
 Be respectful and considerate towards others, regardless of their background or experience level.
