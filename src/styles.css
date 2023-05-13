@@ -1,0 +1,116 @@
+/* :root {
+  --primary-color: white;
+} */
+html,
+body {
+  height: 100%;
+  margin: 0;
+  background-color: rgb(195, 155, 211);
+  font-family: ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont,
+    "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", sans-serif,
+    "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
+}
+
+label,
+input,
+p {
+  font-size: 20px;
+}
+
+button:disabled {
+  background-color: rgb(195, 155, 211);
+}
+
+#root {
+  height: 100%;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+.guess {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  align-items: center;
+}
+
+section {
+  margin: 30px;
+}
+
+/* Heading styles */
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-weight: bold;
+  margin-top: 0;
+  margin-bottom: 0.5rem;
+  color: #9b59c0;
+  font-family: "Open Sans", sans-serif;
+}
+
+h1 {
+  font-size: 3rem;
+  line-height: 1.2;
+}
+
+h2 {
+  font-size: 2.5rem;
+  line-height: 1.2;
+}
+
+h3 {
+  font-size: 2rem;
+  line-height: 1.2;
+}
+
+h4 {
+  font-size: 1.5rem;
+  line-height: 1.2;
+}
+
+h5 {
+  font-size: 1.25rem;
+  line-height: 1.2;
+}
+
+h6 {
+  font-size: 1rem;
+  line-height: 1.2;
+}
+
+/* Paragraph styles */
+p {
+  margin-top: 0;
+  margin-bottom: 1rem;
+  font-size: 1rem;
+  line-height: 1.5;
+  color: #9b59c0;
+}
+
+/* Button styles */
+button {
+  display: inline-block;
+  padding: 0.5rem 1rem;
+  border: none;
+  border-radius: 0.25rem;
+  font-size: 1rem;
+  font-weight: light;
+  color: #ffffff;
+  background-color: #abd39b;
+  cursor: pointer;
+  transition: background-color 0.2s ease-in-out;
+  font-family: "Open Sans", sans-serif;
+}
+
+button:hover {
+  background-color: #9babd3;
+}
+#answr-btn {
+  background-color: #9b59c0;
+}
