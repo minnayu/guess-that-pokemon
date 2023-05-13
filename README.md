@@ -1,6 +1,9 @@
 # guess-that-pokemon
 Welcome to the guess-that-pokemon repository! 
 
+### Check it out:
+### https://endearing-fairy-e5f7e8.netlify.app/
+
 # Installation
 #### To use this project locally, follow these steps:
 
