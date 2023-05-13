@@ -6,14 +6,15 @@ Welcome to the guess-that-pokemon repository!
 
 # Project Structure
 #### guess-that-pokemon/
-#### │
-#### ├── src/
-#### │   ├── App.js (Main page)
-#### │   ├── styles.css (for styling elements)
-#### │   ├── components/
-#### │       ├── Slideshow.js (Slideshow component)
-#### │       
-#### |   
+```
+$PROJECT_ROOT
+├── src/
+│   ├── App.js (Main page)
+│   ├── styles.css (for styling elements)
+│   ├── components/
+│       ├── Slideshow.js (Slideshow component)
+│       
+```
 
 # Installation
 #### To use this project locally, follow these steps:
