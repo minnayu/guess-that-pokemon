@@ -36,6 +36,68 @@ We welcome contributions from anyone, regardless of experience level! If you'd l
 ##### 5. Create a Pull Request to merge your changes into the main branch.
 ##### Please make sure to follow the code style and formatting conventions already in place. Also, be sure to test your changes thoroughly before submitting a Pull Request.
 
+
+# React Coding Standards
+
+This document outlines the coding standards for writing React code. These standards are meant to ensure code consistency, maintainability, and readability across the codebase.
+
+## General Principles
+
+- Follow the react style guide: https://github.com/airbnb/javascript/tree/master/react
+- Write code that is easy to read, understand, and maintain.
+- Write code that is testable and has clear functionality.
+- Keep your code as concise as possible, without sacrificing readability.
+- Avoid unnecessary complexity and abstractions.
+
+## File Structure
+
+- Use a modular file structure, where each component or feature is contained in its own folder.
+- Name files using `PascalCase` for components and `camelCase` for all other files (e.g., `MyComponent.js`, `myUtil.js`).
+- Keep file names consistent with the component or feature they represent.
+
+## Naming Conventions
+
+- Use `PascalCase` for React components and `camelCase` for all other variables, functions, and file names.
+- Prefix private variables and functions with an underscore (e.g., `_myPrivateFunction()`).
+- Use descriptive and meaningful names that accurately represent the function or variable they represent.
+
+## Component Structure
+
+- Components should be small, focused, and reusable.
+- Use stateless functional components when possible, as they are more performant and easier to test.
+- Use class components when you need to manage state or use lifecycle methods.
+- Keep components as pure as possible by minimizing side effects.
+- Divide components into smaller sub-components when they become too complex.
+
+## Props and State
+
+- Use `props` to pass data down from parent components to child components.
+- Avoid modifying `props` directly in child components; instead, use `state` to manage component-specific data.
+- Use `setState()` to update `state`.
+- Avoid using `forceUpdate()` and mutating `state` directly.
+- Keep `state` as simple as possible, avoiding nested objects and arrays.
+
+## Styling
+
+- Use a consistent and organized approach to styling, such as CSS-in-JS or a CSS preprocessor.
+- Avoid inline styles and hard-coded style values.
+- Use a responsive design approach to ensure that your components look good on all devices.
+- Use meaningful class names that accurately represent the content and purpose of the element.
+
+## Testing
+
+- Write tests for all components and functionality.
+- Use test-driven development (TDD) to ensure that your code is testable and functional.
+- Use a testing framework such as Jest or Enzyme.
+- Test all possible scenarios, including edge cases and error handling.
+
+## Documentation
+
+- Document your code using inline comments and README files.
+- Use JSDoc-style comments to document functions and components.
+- Include information about the function or component's parameters, return values, and any side effects.
+- Use a README file to document the purpose and functionality of the component or feature.
+
 # Rules
 To ensure that this repository is a welcoming and inclusive space for everyone, we ask that all contributors abide by the following rules:
 
