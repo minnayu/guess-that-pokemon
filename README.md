@@ -4,16 +4,19 @@ Welcome to the guess-that-pokemon repository!
 # Installation
 #### To use this project locally, follow these steps:
 
-#### Fork and clone repository to your local files
+#### 1. Fork and clone repository to your local files
 
 ### Go to the project directory:
-##### cd guess-that-pokemon
+##### 2. `cd guess-that-pokemon`
 
 ### Install dependencies:
-##### npm install
+##### 3. `npm install`
 
 ### Start the development server:
-##### npm start
+##### 4. `npm start`
+
+###### if having issues regarding styled-components
+###### try `npm install styled-components@latest`, then `npm start` again
 
 ### Open the app in your browser at:
 ##### http://localhost:3000/
