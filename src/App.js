@@ -73,7 +73,13 @@ export default function App() {
         "https://www.kindpng.com/picc/m/363-3637084_pokemon-silhouette-transparent-background-hd-png-download.png",
       alt: "salamander like figure with large crescent shaped tail",
       name: "slowpoke"
-    }
+    },
+    //Added a new pokemon by @Yash8840
+    {
+    image: "https://www.pngitem.com/pimgs/m/95-958057_whos-that-pokemon-hd-png-download.png",
+    alt: "A mouse like figure with a lightning shaped tail",
+    name: "pickachu"
+  }
   ];
 
   // hide website response if slide switched
