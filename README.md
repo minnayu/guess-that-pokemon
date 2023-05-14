@@ -122,3 +122,7 @@ Stay focused on the topic at hand and avoid getting sidetracked by unrelated dis
 If you notice any violations of these rules, please report them to the project maintainers immediately.
 By contributing to this repository, you agree to abide by these rules and to uphold our shared values of inclusivity and respect. Thank you for your contributions!
 
+
+
+# Contribution by Yash8840
+In App.js, moved the "flashcards" array declaration outside the component function and added a new pokemon card(pickachu) for guessing.
