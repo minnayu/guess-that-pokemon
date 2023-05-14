@@ -144,6 +144,7 @@ const Wrapper = styled.div`
   flex-wrap: wrap;
   align-items: center;
   justify-content: space-between;
+  gap: 150px;
 `;
 
 const Controls = styled.div`

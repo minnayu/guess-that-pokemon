@@ -20,11 +20,14 @@ const ImageWrapper = styled.div`
   overflow: hidden;
   display: flex;
   justify-content: center;
+  align-items: center;
+  height: 600px;
+  width: 600px;
   img {
     object-fit: cover;
     display: block;
-    max-width: 600px;
-    max-height: 600px;
+    width: 100%;
+    height: 100%;
     padding: 20px;
   }
 `;
