@@ -1,8 +1,8 @@
 # guess-that-pokemon
 Welcome to the guess-that-pokemon repository! 
 
-### Check it out:
-### https://endearing-fairy-e5f7e8.netlify.app/
+### Deployed Site:
+### https://cute-narwhal-1539b1.netlify.app/
 
 # Project Structure
 #### guess-that-pokemon/
