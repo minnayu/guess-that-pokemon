@@ -114,3 +114,15 @@ button:hover {
 #answr-btn {
   background-color: #9b59c0;
 }
+
+/* Correct and Incorrect styles */
+.correct-text {
+  font-size: 40px;
+  color: green;
+  font-family: "Arial Black", Arial, sans-serif;
+}
+.incorrect-text {
+  font-size: 40px;
+  color: red;
+  font-family: "Arial Black", Arial, sans-serif;
+}
