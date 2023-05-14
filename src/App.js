@@ -78,7 +78,7 @@ export default function App() {
     {
     image: "https://www.pngitem.com/pimgs/m/95-958057_whos-that-pokemon-hd-png-download.png",
     alt: "A mouse like figure with a lightning shaped tail",
-    name: "pickachu"
+    name: "pikachu"
   }
   ];
 
