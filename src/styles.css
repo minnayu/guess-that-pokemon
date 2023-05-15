@@ -126,3 +126,12 @@ button:hover {
   color: red;
   font-family: "Arial Black", Arial, sans-serif;
 }
+
+.hint-section {
+  display: flex;
+  flex-direction: column;
+}
+
+.hint-text {
+  height: 2em;
+}
