@@ -6,9 +6,6 @@ import { useState, useEffect } from "react";
 export default function App() {
   const [index, setIndex] = useState(0);
   const [inputValue, setInputValue] = useState("");
-  const [response, setResponse] = useState("");
-  const [isResponseVisible, setResponseIsVisible] = useState(false);
-  const [responseColor, setResponseColor] = useState("#FF0000");
 
   const flashcards = [
     {
@@ -84,7 +81,6 @@ export default function App() {
 
   // hide website response if slide switched
   useEffect(() => {
-    setResponseIsVisible(false);
     setInputValue("");
   }, [index]);
 
@@ -95,12 +91,11 @@ export default function App() {
 
   // activate everytime the user checks their answer
   function handleButtonClick() {
-    setResponseIsVisible(true);
-
     if (inputValue.toLowerCase() === flashcards[index].name) {
-      setResponse(<span className="correct-text">Correct!</span>);
+      alert("Correct!");
+      setIndex(index + 1);
     } else {
-      setResponse(<span className="incorrect-text">Incorrect!</span>);
+      alert("Incorrect Try again!");
     }
   }
 
@@ -109,19 +104,8 @@ export default function App() {
       {/* <h1> Who's that Pokemon? </h1> */}
       <div>
         <Slideshow flashcards={flashcards[index]} />
-        <Controls>
-          <button disabled={index === 0} onClick={() => setIndex(index - 1)}>
-            Previous
-          </button>
-          <button
-            disabled={index === flashcards.length - 1}
-            onClick={() => setIndex(index + 1)}
-          >
-            Next
-          </button>
-        </Controls>
       </div>
-      <section class="guess">
+      <section className="guess">
         <img src="https://camo.githubusercontent.com/5d1fe59c3f0e4cfb5480bb8d8b1eb3ba58906acef846904fde8afcc5f773adbb/68747470733a2f2f692e696d6775722e636f6d2f583962314b75362e706e67" />
         <label>Enter your guess:</label>
         <input
@@ -132,11 +116,6 @@ export default function App() {
         <button id="answr-btn" onClick={handleButtonClick}>
           Check Answer
         </button>
-        {isResponseVisible && (
-          <p style={{ color: responseColor }} class="response" id="response">
-            {response}
-          </p>
-        )}
       </section>
     </Wrapper>
   );
