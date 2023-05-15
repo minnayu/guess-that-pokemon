@@ -6,6 +6,7 @@ import { useState, useEffect } from "react";
 export default function App() {
   const [index, setIndex] = useState(0);
   const [inputValue, setInputValue] = useState("");
+  const [hint, setHint] = useState('');
 
   const flashcards = [
     {
@@ -82,6 +83,7 @@ export default function App() {
   // hide website response if slide switched
   useEffect(() => {
     setInputValue("");
+    setHint(''); // reset the hint whenever slide is switched
   }, [index]);
 
   // get user's answer
@@ -99,11 +101,27 @@ export default function App() {
     }
   }
 
+  // activates when a user clicks on the 'Hint' button
+  function handleDisplayHint(pokemonName) {
+    const length = pokemonName.length;
+    // mask 60% of the characters in hint text
+    const noOfCharsToMask = Math.floor(0.6*length);
+    const remainingNoOfChars = length - noOfCharsToMask;
+    const hintToDisplay = pokemonName.slice(0, Math.floor(remainingNoOfChars/2)) + '*'.repeat(noOfCharsToMask) + pokemonName.slice(noOfCharsToMask+Math.floor(remainingNoOfChars/2));
+    setHint(`Hint: ${hintToDisplay}`);
+  }
+
   return (
     <Wrapper>
       {/* <h1> Who's that Pokemon? </h1> */}
       <div>
         <Slideshow flashcards={flashcards[index]} />
+        <div className="hint-section">   
+          <div style={{ visibility: hint ? 'visible' : 'hidden' }} className="hint-text">{hint}</div>
+          <button type="button" id="hint-btn" onClick={() => handleDisplayHint(flashcards[index].name)}>
+            Hint
+          </button>
+        </div>
       </div>
       <section className="guess">
         <img src="https://camo.githubusercontent.com/5d1fe59c3f0e4cfb5480bb8d8b1eb3ba58906acef846904fde8afcc5f773adbb/68747470733a2f2f692e696d6775722e636f6d2f583962314b75362e706e67" />
