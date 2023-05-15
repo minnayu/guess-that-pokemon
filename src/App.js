@@ -1,11 +1,13 @@
 import "./styles.css";
 import styled from "styled-components";
 import Slideshow from "./components/Slideshow";
-import { useState, useEffect } from "react";
+import { useState, useEffect, useCallback, useRef } from "react";
 
+let touched = false;
 export default function App() {
   const [index, setIndex] = useState(0);
-  const [inputValue, setInputValue] = useState("");
+  // const [inputValue, setInputValue] = useState("");
+  const inputValue = useRef()
   const [response, setResponse] = useState("");
   const [isResponseVisible, setResponseIsVisible] = useState(false);
   const [responseColor, setResponseColor] = useState("#FF0000");
@@ -85,23 +87,43 @@ export default function App() {
   // hide website response if slide switched
   useEffect(() => {
     setResponseIsVisible(false);
-    setInputValue("");
   }, [index]);
 
   // get user's answer
   function handleInputChange(event) {
-    setInputValue(event.target.value);
+    touched = true;
   }
+  
 
   // activate everytime the user checks their answer
   function handleButtonClick() {
     setResponseIsVisible(true);
-
-    if (inputValue.toLowerCase() === flashcards[index].name) {
+    console.log(flashcards[index].name);
+    console.log(inputValue.current.value);
+    if (inputValue.current.value.toLowerCase() === flashcards[index].name) {
       setResponse(<span className="correct-text">Correct!</span>);
     } else {
       setResponse(<span className="incorrect-text">Incorrect!</span>);
     }
+  }
+  
+  //adding window event listener
+  useEffect(() => {
+    window.addEventListener('keydown', handleEnterKey);
+
+    // cleanup this component
+    return () => {
+      window.removeEventListener('keydown', handleEnterKey);
+    };
+  }, []);
+
+  //function to check if "enter" pressed
+  function handleEnterKey(e){
+   console.log(e);
+   if(e.code === "Enter"){
+    handleButtonClick();
+    console.log(touched);
+   }
   }
 
   return (
@@ -121,19 +143,20 @@ export default function App() {
           </button>
         </Controls>
       </div>
-      <section class="guess">
+      <section className="guess">
         <img src="https://camo.githubusercontent.com/5d1fe59c3f0e4cfb5480bb8d8b1eb3ba58906acef846904fde8afcc5f773adbb/68747470733a2f2f692e696d6775722e636f6d2f583962314b75362e706e67" />
         <label>Enter your guess:</label>
         <input
           type="text"
-          value={inputValue}
+          // value=""
           onChange={handleInputChange}
+          ref={inputValue}
         ></input>
         <button id="answr-btn" onClick={handleButtonClick}>
           Check Answer
         </button>
         {isResponseVisible && (
-          <p style={{ color: responseColor }} class="response" id="response">
+          <p style={{ color: responseColor }} className="response" id="response">
             {response}
           </p>
         )}

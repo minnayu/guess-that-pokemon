@@ -125,4 +125,6 @@ By contributing to this repository, you agree to abide by these rules and to uph
 
 
 # Contribution by Yash8840
-In App.js, moved the "flashcards" array declaration outside the component function and added a new pokemon card(pickachu) for guessing.
+1. In App.js, moved the "flashcards" array declaration outside the component function and added a new pokemon card(pickachu) for guessing.
+
+2. In app.js, to add the functionality of checking answer when "enter" is pressed, removed the state management for input element and instead added ref(also, ref doesn't trigger re-render).
